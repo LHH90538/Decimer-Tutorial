@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 在此，我寻找了一种较好的方法解决这个问题:
 
-首先记住上面文件自动下载的位置，比如我这边是Users\15274\.data\DECIMER_V2 (目录位置因人而异！)
+首先记住上面文件自动下载的位置，比如我这边是`Users\15274\.data\DECIMER_V2` (目录名称因人而异！)
 
 直接手动在zenodo网站下载zip文件:
 
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 在 https://zenodo.org/records/10781330 下载DECIMER_HandDrawn_model.zip(298.5MB)
 ![图片！](fig/handdrawn.png)
 
-解压后将这两个文件夹放在刚刚提到的Users\15274\.data\DECIMER_V2 (目录位置因人而异！)
+解压后将这两个文件夹放在刚刚提到的`Users\15274\.data\DECIMER_V2` (目录名称因人而异！)
 
 文件放置位置如下所示
 ```
@@ -76,5 +76,6 @@ python test.py
 最后decimer库+我的改进脚本可以封装成 API 用于搭建各种化学分析网站，本项目采用MIT2.0开放协议
 
 不过这样做仍然有些小bug，比如识别的smiles中[Ts]出现在第一位，转换成甲苯磺酰基时结构有点小错误，不过“[Ts]出现在第一位”这种情况非常少见，基本上可忽略
+
 
 第一版写于2025/11/11

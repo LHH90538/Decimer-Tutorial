@@ -6,6 +6,8 @@ Decimer是一个可以直接识别复杂有机化学结构式并输出smiles式�
 
 本项目由`LHH90538`创造
 
+![图片！](fig/对比图.png)
+
 ## 安装教程
 1. 首先需要python3.10+环境，建议用conda创建虚拟环境来使用
 
@@ -28,7 +30,7 @@ pip install -r requirements.txt
 
 在此，我寻找了一种较好的方法解决这个问题:
 
-首先记住上面文件自动下载的位置，比如我这边是`Users\15274\.data\DECIMER_V2` (目录名称因人而异！)
+首先记住上面文件自动下载的位置，比如我这边是Users\15274\.data\DECIMER_V2 (目录位置因人而异！)
 
 直接手动在zenodo网站下载zip文件:
 
@@ -37,7 +39,7 @@ pip install -r requirements.txt
 在 https://zenodo.org/records/10781330 下载DECIMER_HandDrawn_model.zip(298.5MB)
 ![图片！](fig/handdrawn.png)
 
-解压后将这两个文件夹放在刚刚提到的`Users\15274\.data\DECIMER_V2` (目录名称因人而异！)
+解压后将这两个文件夹放在刚刚提到的Users\15274\.data\DECIMER_V2 (目录位置因人而异！)
 
 文件放置位置如下所示
 ```
@@ -51,6 +53,8 @@ pip install -r requirements.txt
 ```
 
 这样，程序检测到模型文件存在，就不会再去慢慢下载这两个文件了
+
+## 使用教程
 
 现在可以安心识别有机化学的图片了，首次运行会加载配置会慢一些
 
@@ -79,3 +83,5 @@ python test.py
 
 
 第一版写于2025/11/11
+
+第二版写于2025/11/21

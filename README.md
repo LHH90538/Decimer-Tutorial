@@ -81,7 +81,18 @@ python test.py
 
 不过这样做仍然有些小bug，比如识别的smiles中[Ts]出现在第一位，转换成甲苯磺酰基时结构有点小错误，不过“[Ts]出现在第一位”这种情况非常少见，基本上可忽略
 
+补充：
+另一个有竞争力的项目`MolNexTR` https://github.com/CYF2000127/MolNexTR 提供了更快的识别速度和更简单的部署速度，同时能够识别带有电荷的分子图（如下所示）和Cbz保护基，这是DECIMER做不到的。
+<p align="center">
+  <img src="mol_png/ion.png" width="150">
+</p>
+
+
+然而，`MolNexTR`有个致命的缺点————会把酰胺基团，如-CONH<sub>2</sub>识别成羧基-COOH，而且在复杂立体分子识别上稍微弱于DECIMER。
+
 
 第一版写于2025/11/11
 
 第二版写于2025/11/21
+
+第三版写于2025/11/22
